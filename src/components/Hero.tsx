@@ -9,6 +9,9 @@ type HeroProps = {
 };
 
 export default function Hero({ name, age, diseaseTitle, summary, docsLink }: HeroProps) {
+  // Highlight 'Keytruda (Pembrolizumab)' in summary
+  const highlight = "Keytruda (Pembrolizumab)";
+  const parts = summary.split(highlight);
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-rose-50 to-white">
       <div className="absolute inset-0 pointer-events-none z-0" aria-hidden>
@@ -22,7 +25,9 @@ export default function Hero({ name, age, diseaseTitle, summary, docsLink }: Her
           </h1>
           <p className="mt-2 text-zinc-600">Age {age} · {diseaseTitle}</p>
           <p className="mt-6 text-lg leading-8 text-zinc-700">
-            {summary}
+            {parts[0]}
+            <strong>{highlight}</strong>
+            {parts[1]}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
