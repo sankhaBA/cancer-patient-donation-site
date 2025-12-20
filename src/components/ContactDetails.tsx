@@ -48,7 +48,12 @@ export default function ContactDetails({ address, phones, emails }: ContactDetai
                     className="font-medium text-zinc-800 break-all max-w-full"
                     style={{ wordBreak: 'break-all', overflowWrap: 'break-word' }}
                   >
-                    {e}
+                    <a
+                      href={`mailto:${e}`}
+                      className="hover:underline"
+                    >
+                      {e}
+                    </a>
                   </li>
                 ))}
               </ul>
