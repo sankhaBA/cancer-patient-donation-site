@@ -29,6 +29,11 @@ export default function TreatmentTimeline({
     maximumFractionDigits: 0,
   });
 
+  // Read collected amount from env (Next.js: must use NEXT_PUBLIC_ prefix)
+  const collectedAmount = typeof window !== "undefined" && process.env.NEXT_PUBLIC_COLLECTED_AMOUNT
+    ? Number(process.env.NEXT_PUBLIC_COLLECTED_AMOUNT)
+    : 0;
+
   return (
     <section className="container mx-auto px-6 py-8">
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
@@ -40,9 +45,15 @@ export default function TreatmentTimeline({
           <p className="text-sm text-zinc-500">Treatment</p>
           <p className="font-medium text-zinc-800">{treatmentName}</p>
           <p className="mt-2 text-zinc-700">{description}</p>
-          <div className="mt-4 rounded-xl bg-rose-50 p-4">
-            <p className="text-sm text-rose-700">Total Needed</p>
-            <p className="text-2xl font-bold text-rose-900">{formatter.format(totalAmount)}</p>
+          <div className="mt-4 flex flex-col gap-4 sm:flex-row">
+            <div className="flex-1 rounded-xl bg-rose-50 p-4 flex flex-col items-start">
+              <p className="text-sm text-rose-700">Total Needed</p>
+              <p className="text-2xl font-bold text-rose-900">{formatter.format(totalAmount)}</p>
+            </div>
+            <div className="flex-1 rounded-xl bg-green-50 p-4 flex flex-col items-start">
+              <p className="text-sm text-green-700">Currently Collected</p>
+              <p className="text-2xl font-bold text-green-900">{formatter.format(collectedAmount)}</p>
+            </div>
           </div>
         </div>
         <div className="mt-6">

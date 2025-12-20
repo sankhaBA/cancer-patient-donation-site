@@ -11,11 +11,11 @@ type HeroProps = {
 export default function Hero({ name, age, diseaseTitle, summary, docsLink }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-rose-50 to-white">
-      <div className="absolute inset-0 pointer-events-none" aria-hidden>
+      <div className="absolute inset-0 pointer-events-none z-0" aria-hidden>
         <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-rose-100 blur-3xl" />
         <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-rose-100 blur-3xl" />
       </div>
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900">
             Help Save {name}
