@@ -18,7 +18,7 @@ export default function BankAccounts({ accounts }: BankAccountsProps) {
     <section id="bank-accounts" className="container mx-auto px-6 py-8">
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
         <div className="flex items-center gap-3">
-          <Banknote className="h-6 w-6 text-rose-600" />
+          <Banknote className="h-6 w-6" style={{ color: '#7C6A9C' }} />
           <h2 className="text-xl font-semibold text-zinc-900">Bank Accounts</h2>
         </div>
         <p className="mt-2 text-zinc-700">

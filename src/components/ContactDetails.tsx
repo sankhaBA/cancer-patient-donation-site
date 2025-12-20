@@ -13,14 +13,14 @@ export default function ContactDetails({ address, phones, emails }: ContactDetai
         <h2 className="text-xl font-semibold text-zinc-900">Contact</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="flex items-start gap-3">
-            <MapPin className="h-6 w-6 shrink-0 text-rose-600" />
+            <MapPin className="h-6 w-6 shrink-0" style={{ color: '#7C6A9C' }} />
             <div>
               <p className="text-sm text-zinc-500">Address</p>
               <p className="font-medium text-zinc-800">{address}</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <Phone className="h-6 w-6 shrink-0 text-rose-600" />
+            <Phone className="h-6 w-6 shrink-0" style={{ color: '#7C6A9C' }} />
             <div>
               <p className="text-sm text-zinc-500">Telephone</p>
               <ul className="space-y-1">
@@ -31,7 +31,7 @@ export default function ContactDetails({ address, phones, emails }: ContactDetai
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <Mail className="h-6 w-6 shrink-0 text-rose-600" />
+            <Mail className="h-6 w-6 shrink-0" style={{ color: '#7C6A9C' }} />
             <div>
               <p className="text-sm text-zinc-500">Email</p>
               <ul className="space-y-1">
