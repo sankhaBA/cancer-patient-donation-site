@@ -36,7 +36,13 @@ export default function ContactDetails({ address, phones, emails }: ContactDetai
               <p className="text-sm text-zinc-500">Email</p>
               <ul className="space-y-1">
                 {emails.map((e) => (
-                  <li key={e} className="font-medium text-zinc-800">{e}</li>
+                  <li
+                    key={e}
+                    className="font-medium text-zinc-800 break-all max-w-full"
+                    style={{ wordBreak: 'break-all', overflowWrap: 'break-word' }}
+                  >
+                    {e}
+                  </li>
                 ))}
               </ul>
             </div>
