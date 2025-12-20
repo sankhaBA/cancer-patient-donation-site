@@ -67,6 +67,7 @@ export const dummyData: DonationSiteData = {
   },
   docsLink:
     "https://drive.google.com/drive/folders/1Qvv_ZOpmq06cf0wz8RRJaILQ0WU-VZp6?usp=sharing",
+
   contact: {
     address:
       "'Manjula', Wallahagoda, Gampola, Sri Lanka",
