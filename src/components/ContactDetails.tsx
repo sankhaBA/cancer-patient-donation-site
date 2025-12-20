@@ -25,7 +25,14 @@ export default function ContactDetails({ address, phones, emails }: ContactDetai
               <p className="text-sm text-zinc-500">Telephone</p>
               <ul className="space-y-1">
                 {phones.map((p) => (
-                  <li key={p} className="font-medium text-zinc-800">{p}</li>
+                  <li key={p}>
+                    <a
+                      href={`tel:${p.replace(/[^\d+]/g, '')}`}
+                      className="font-medium text-zinc-800 hover:underline"
+                    >
+                      {p}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>

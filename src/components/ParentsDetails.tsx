@@ -30,7 +30,14 @@ function ParentCard({ label, parent }: { label: string; parent: Parent }) {
           <Phone className="h-5 w-5" style={{ color: '#7C6A9C' }} />
           <div>
             {parent.phones.map((p) => (
-              <p key={p} className="leading-6">{p}</p>
+              <p key={p} className="leading-6">
+                <a
+                  href={`tel:${p.replace(/[^\d+]/g, '')}`}
+                  className="hover:underline text-zinc-800"
+                >
+                  {p}
+                </a>
+              </p>
             ))}
           </div>
         </div>
