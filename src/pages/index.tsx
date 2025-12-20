@@ -51,6 +51,11 @@ export default function Home() {
           totalAmount={treatmentPlan.totalAmount}
           currency={treatmentPlan.currency}
           deadlines={treatmentPlan.deadlines}
+          collectedAmount={
+            typeof process.env.NEXT_PUBLIC_COLLECTED_AMOUNT !== 'undefined'
+              ? Number(process.env.NEXT_PUBLIC_COLLECTED_AMOUNT)
+              : 0
+          }
         />
       </main>
       <Footer />

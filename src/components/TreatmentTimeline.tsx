@@ -14,6 +14,7 @@ type TreatmentTimelineProps = {
   totalAmount: number;
   currency: string;
   deadlines: Deadline[];
+  collectedAmount: number;
 };
 
 export default function TreatmentTimeline({
@@ -22,6 +23,7 @@ export default function TreatmentTimeline({
   totalAmount,
   currency,
   deadlines,
+  collectedAmount,
 }: TreatmentTimelineProps) {
   const formatter = new Intl.NumberFormat(undefined, {
     style: "currency",
@@ -29,10 +31,7 @@ export default function TreatmentTimeline({
     maximumFractionDigits: 0,
   });
 
-  // Read collected amount from env (Next.js: must use NEXT_PUBLIC_ prefix)
-  const collectedAmount = typeof window !== "undefined" && process.env.NEXT_PUBLIC_COLLECTED_AMOUNT
-    ? Number(process.env.NEXT_PUBLIC_COLLECTED_AMOUNT)
-    : 0;
+  // collectedAmount is now passed as a prop to avoid hydration mismatch
 
   return (
     <section className="container mx-auto px-6 py-8">
