@@ -122,7 +122,7 @@ export const dummyData: DonationSiteData = {
   },
   parents: {
     mother: {
-      name: "Nirmala Perera",
+      name: "Gayana Kumari",
       address: "No. 123, Temple Road, Galle, Sri Lanka",
       occupation: "Housewife",
       phones: ["+94 71 222 3344", "+94 77 333 4455"],
