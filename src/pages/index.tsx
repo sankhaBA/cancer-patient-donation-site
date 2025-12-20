@@ -28,7 +28,7 @@ export default function Home() {
     <div className={`${geistSans.className} ${geistMono.className} bg-zinc-50 font-sans`}>
       <Head>
         <title>Help {patient.name} | Donation Request</title>
-        <meta name="description" content="Support Kavindu's urgent cancer treatment with your donation." />
+        <meta name="description" content="Support Dimanya's urgent cancer treatment with your donation." />
       </Head>
       <Hero
         name={patient.name}
