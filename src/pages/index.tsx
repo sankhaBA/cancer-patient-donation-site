@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
   const { patient, disease, docsLink, contact, hospital, bankAccounts, treatmentPlan, parents } = dummyData;
   return (
-    <div className={`${geistSans.className} ${geistMono.className} bg-zinc-100 font-sans`}>
+    <div className={`${geistSans.className} ${geistMono.className} bg-[#E6E6FA] font-sans`}>
       <Head>
         <title>Help {patient.name} | Donation Request</title>
         <meta name="description" content="Support Dimanya's urgent cancer treatment with your donation." />
