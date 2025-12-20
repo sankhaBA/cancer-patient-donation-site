@@ -124,13 +124,13 @@ export const dummyData: DonationSiteData = {
     mother: {
       name: "Nirmala Perera",
       address: "No. 123, Temple Road, Galle, Sri Lanka",
-      occupation: "Garment Factory Worker",
+      occupation: "Housewife",
       phones: ["+94 71 222 3344", "+94 77 333 4455"],
     },
     father: {
       name: "Sunil Perera",
       address: "No. 123, Temple Road, Galle, Sri Lanka",
-      occupation: "Three-Wheeler Driver",
+      occupation: "Manager",
       phones: ["+94 72 555 6677"],
     },
   },
