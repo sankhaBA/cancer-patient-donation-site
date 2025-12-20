@@ -19,15 +19,15 @@ function ParentCard({ label, parent }: { label: string; parent: Parent }) {
       <p className="mt-1 text-lg font-semibold text-zinc-900">{parent.name}</p>
       <div className="mt-3 space-y-2 text-zinc-800">
         <div className="flex items-start gap-2">
-          <MapPin className="h-5 w-5 text-rose-600" />
+          <MapPin className="h-5 w-5" style={{ color: '#7C6A9C' }} />
           <span>{parent.address}</span>
         </div>
         <div className="flex items-start gap-2">
-          <Briefcase className="h-5 w-5 text-rose-600" />
+          <Briefcase className="h-5 w-5" style={{ color: '#7C6A9C' }} />
           <span>{parent.occupation}</span>
         </div>
         <div className="flex items-start gap-2">
-          <Phone className="h-5 w-5 text-rose-600" />
+          <Phone className="h-5 w-5" style={{ color: '#7C6A9C' }} />
           <div>
             {parent.phones.map((p) => (
               <p key={p} className="leading-6">{p}</p>
@@ -44,7 +44,7 @@ export default function ParentsDetails({ mother, father }: ParentsDetailsProps) 
     <section className="container mx-auto px-6 py-8">
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
         <div className="flex items-center gap-3">
-          <Users className="h-6 w-6 text-rose-600" />
+          <Users className="h-6 w-6" style={{ color: '#7C6A9C' }} />
           <h2 className="text-xl font-semibold text-zinc-900">Parents</h2>
         </div>
         <p className="mt-2 text-zinc-700">
