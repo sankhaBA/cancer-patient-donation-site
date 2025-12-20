@@ -57,30 +57,30 @@ export type DonationSiteData = {
 
 export const dummyData: DonationSiteData = {
   patient: {
-    name: "Kavindu Perera",
+    name: "Dimanya Mindulee Premalal",
     age: 20,
   },
   disease: {
-    title: "Advanced Cutaneous Carcinoma",
+    title: "Malignant Melanoma Cancer",
     summary:
-      "Kavindu is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer. Immediate multi-phase treatment is required to halt progression and protect vital functions. Your support directly funds his life-saving care.",
+      "Dimanya is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer, currently at stage III. An immunotherapy course of Keytruda (Pembrolizumab) is required to improve her chances of remission and long-term survival.Your support can make a life-changing difference in her fight against this disease.",
   },
   docsLink:
-    "https://drive.google.com/drive/folders/EXAMPLE-VERIFIED-PATIENT-DOCUMENTS",
+    "https://drive.google.com/drive/folders/1Qvv_ZOpmq06cf0wz8RRJaILQ0WU-VZp6?usp=sharing",
   contact: {
     address:
-      "No. 123, Temple Road, Galle, Sri Lanka",
-    phones: ["+94 71 123 4567", "+94 77 987 6543"],
-    emails: ["help.kavindu@example.org", "family.kavindu@example.org"],
+      "'Manjula', Wallahagoda, Gampola, Sri Lanka",
+    phones: ["+94 70 119 3111", "+94 70 119 3100"],
+    emails: ["careforcure.donations@gmail.com", "sahanruwansara2000@gmail.com"],
   },
   hospital: {
-    hospital: "National Cancer Institute (Apeksha), Maharagama",
-    doctor: "Dr. S. Jayasinghe (Consultant Oncologist)",
+    hospital: "National Cancer Institute Sri Lanka (Apeksha Hospital), Maharagama",
+    doctor: "Dr. Wasantha Rathnayake (Consultant Clinical Oncologist)",
   },
   bankAccounts: [
     {
       bankName: "Bank of Ceylon",
-      accountName: "Kavindu Perera",
+      accountName: "Dimanya Mindulee Premalal",
       accountNumber: "123456789",
       branch: "Galle Branch",
       swift: "BCEYLKLX",
@@ -95,10 +95,10 @@ export const dummyData: DonationSiteData = {
     },
   ],
   treatmentPlan: {
-    treatmentName: "Targeted Immunotherapy + Radiotherapy",
+    treatmentName: "Targeted Immunotherapy with Keytruda",
     description:
-      "A 6-month protocol combining targeted immunotherapy and adjunct radiotherapy sessions to control tumor growth and support recovery.",
-    totalAmount: 8500000,
+      "A 1 year protocol combining targeted immunotherapy sessions to control cancer growth and support recovery.",
+    totalAmount: 6000000,
     currency: "LKR",
     deadlines: [
       { id: 1, title: "Phase 1", date: "2026-01-07", amount: 500000, description: "Medication procurement and session fees" },
@@ -123,15 +123,15 @@ export const dummyData: DonationSiteData = {
   parents: {
     mother: {
       name: "Gayana Kumari",
-      address: "No. 123, Temple Road, Galle, Sri Lanka",
+      address: "'Manjula', Wallahagoda, Gampola, Sri Lanka",
       occupation: "Housewife",
-      phones: ["+94 71 222 3344", "+94 77 333 4455"],
+      phones: ["+94 77 900 4975"],
     },
     father: {
-      name: "Sunil Perera",
-      address: "No. 123, Temple Road, Galle, Sri Lanka",
-      occupation: "Manager",
-      phones: ["+94 72 555 6677"],
+      name: "Senaka Premalal",
+      address: "'Manjula', Wallahagoda, Gampola, Sri Lanka",
+      occupation: "Opthalmic Technologist",
+      phones: ["+94 70 119 3111"],
     },
   },
 };
