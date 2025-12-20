@@ -63,7 +63,7 @@ export const dummyData: DonationSiteData = {
   disease: {
     title: "Malignant Melanoma Cancer",
     summary:
-      "Dimanya is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer, currently at stage III. An immunotherapy course of <b>Keytruda (Pembrolizumab)</b> is required to improve her chances of remission and long-term survival.Your support can make a life-changing difference in her fight against this disease.",
+      "Dimanya is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer, currently at stage III. An immunotherapy course of Keytruda (Pembrolizumab) is required to improve her chances of remission and long-term survival.Your support can make a life-changing difference in her fight against this disease.",
   },
   docsLink:
     "https://drive.google.com/drive/folders/1Qvv_ZOpmq06cf0wz8RRJaILQ0WU-VZp6?usp=sharing",
