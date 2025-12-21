@@ -38,7 +38,7 @@ export default function DocumentsCTA() {
           ))}
         </div>
         {modalOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" onClick={closeModal}>
+          <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/20" onClick={closeModal}>
             <div className="relative bg-white rounded-lg p-4 max-w-2xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
               <button className="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-800" onClick={closeModal}>&times;</button>
               <img src={images[selectedImg].src} alt={images[selectedImg].alt} className="max-h-[70vh] w-auto rounded" />
