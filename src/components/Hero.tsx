@@ -9,8 +9,8 @@ type HeroProps = {
 };
 
 export default function Hero({ name, age, diseaseTitle, summary, docsLink }: HeroProps) {
-  // Highlight 'Keytruda (Pembrolizumab)' in summary
-  const highlight = "Keytruda (Pembrolizumab)";
+  // Highlight 'Pembroxin (Pembrolizumab)' in summary
+  const highlight = "Pembroxin (Pembrolizumab)";
   const parts = summary.split(highlight);
   return (
     <section className="relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, #E6E6FA, #fff)' }}>

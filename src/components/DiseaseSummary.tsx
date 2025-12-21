@@ -6,8 +6,8 @@ type DiseaseSummaryProps = {
 };
 
 export default function DiseaseSummary({ title, summary }: DiseaseSummaryProps) {
-  // Highlight 'Keytruda (Pembrolizumab)' in summary
-  const highlight = "Keytruda (Pembrolizumab)";
+  // Highlight 'Pembroxin  (Pembrolizumab)' in summary
+  const highlight = "Pembroxin  (Pembrolizumab)";
   const parts = summary.split(highlight);
   return (
     <section className="container mx-auto px-6 py-8">
