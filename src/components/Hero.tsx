@@ -41,9 +41,7 @@ export default function Hero({ name, age, diseaseTitle, summary, docsLink }: Her
               Donate via Bank Transfer
             </a>
             <a
-              href={docsLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#view-documents"
               className="inline-flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition"
               style={{ borderColor: '#E6E6FA', color: '#7C6A9C' }}
               onMouseOver={e => {
