@@ -26,7 +26,7 @@ export default function Home() {
   const { patient, disease, docsLink, contact, hospital, bankAccounts, treatmentPlan, parents } = dummyData;
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} font-sans min-h-screen`}
+      className="min-h-screen"
       style={{
         backgroundImage: "url('/images/backgroundImage2.png')",
         backgroundRepeat: 'no-repeat',
@@ -48,7 +48,7 @@ export default function Home() {
       <main>
         <PatientInfo name={patient.name} age={patient.age} />
         <DiseaseSummary title={disease.title} summary={disease.summary} />
-        <DocumentsCTA docsLink={docsLink} />
+        <DocumentsCTA />
         <ContactDetails address={contact.address} phones={contact.phones} emails={contact.emails} />
         <ParentsDetails mother={parents.mother} father={parents.father} />
         <HospitalDoctor hospital={hospital.hospital} doctor={hospital.doctor} />
