@@ -21,8 +21,8 @@ export default function DocumentsCTA() {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <section id="view-documents" className="container mx-auto px-6 py-8">
-      <div className="rounded-2xl border p-6 shadow-sm" style={{ borderColor: '#E6E6FA', background: '#E6E6FA' }}>
+    <section id="view-documents" className="container mx-auto px-6 py-8" style={{ fontFamily: 'Segoe UI, Arial, sans-serif' }}>
+      <div className="rounded-2xl border p-6 shadow-sm" style={{ borderColor: '#E6E6FA', background: '#E6E6FA', fontFamily: 'inherit' }}>
         <div className="flex items-center gap-3">
           <FileCheck className="h-6 w-6" style={{ color: '#7C6A9C' }} />
           <h2 className="text-xl font-semibold" style={{ color: '#7C6A9C' }}>Verified Documents</h2>
@@ -42,7 +42,6 @@ export default function DocumentsCTA() {
             <div className="relative bg-white rounded-lg p-4 max-w-2xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
               <button className="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-800" onClick={closeModal}>&times;</button>
               <img src={images[selectedImg].src} alt={images[selectedImg].alt} className="max-h-[70vh] w-auto rounded" />
-              <div className="mt-2 text-gray-700">{images[selectedImg].alt}</div>
             </div>
           </div>
         )}
