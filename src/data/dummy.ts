@@ -81,19 +81,19 @@ export const dummyData: DonationSiteData = {
   bankAccounts: [
     {
       bankName: "Bank of Ceylon",
-      accountName: "Dimanya Mindulee Premalal",
-      accountNumber: "123456789",
-      branch: "Galle Branch",
-      swift: "BCEYLKLX",
-      notes: "Savings Account",
+      accountName: "U.S.R Premalal",
+      accountNumber: "89356551",
+      branch: "Nuwaraeliya",
+      // swift: "BCEYLKLX",
+      // notes: "Savings Account",
     },
-    {
-      bankName: "Commercial Bank",
-      accountName: "Kavindu Perera",
-      accountNumber: "987654321",
-      branch: "Maharagama Branch",
-      swift: "CCEYLKLX",
-    },
+    // {
+    //   bankName: "Commercial Bank",
+    //   accountName: "Kavindu Perera",
+    //   accountNumber: "987654321",
+    //   branch: "Maharagama Branch",
+    //   swift: "CCEYLKLX",
+    // },
   ],
   treatmentPlan: {
     treatmentName: "Targeted Immunotherapy with Keytruda",
