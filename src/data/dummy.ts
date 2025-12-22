@@ -96,10 +96,10 @@ export const dummyData: DonationSiteData = {
     // },
   ],
   treatmentPlan: {
-    treatmentName: "Targeted Immunotherapy with Keytruda",
+    treatmentName: "Targeted Immunotherapy with Pembroxin (Pembrolizumab)",
     description:
       "A 1 year protocol combining targeted immunotherapy sessions to control cancer growth and support recovery.",
-    totalAmount: 6000000,
+    totalAmount: 6300000,
     currency: "LKR",
     deadlines: [
       { id: 1, title: "Phase 1", date: "2026-01-07", amount: 500000, description: "Medication procurement and session fees" },
