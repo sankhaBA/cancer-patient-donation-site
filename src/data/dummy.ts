@@ -96,7 +96,7 @@ export const dummyData: DonationSiteData = {
     // },
   ],
   treatmentPlan: {
-    treatmentName: "Targeted Immunotherapy with Keytruda",
+    treatmentName: "Targeted Immunotherapy with Pembroxin (Pembrolizumab)",
     description:
       "A 1 year protocol combining targeted immunotherapy sessions to control cancer growth and support recovery.",
     totalAmount: 6300000,
