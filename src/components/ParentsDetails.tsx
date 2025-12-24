@@ -55,7 +55,7 @@ export default function ParentsDetails({ mother, father }: ParentsDetailsProps) 
           <h2 className="text-xl font-semibold text-zinc-900">Parents</h2>
         </div>
         <p className="mt-2 text-zinc-700">
-          For any clarifications or verification, you may contact Dimanya's parents.
+          For any clarifications or verification, you may contact Mindulee's parents.
         </p>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
           <ParentCard label="Mother" parent={mother} />
