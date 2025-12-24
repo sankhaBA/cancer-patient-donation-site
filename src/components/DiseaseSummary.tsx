@@ -21,7 +21,7 @@ export default function DiseaseSummary({ title, summary }: DiseaseSummaryProps) 
           <p className="font-medium text-zinc-800">{title}</p>
           <p className="mt-3 text-zinc-700 leading-7">
             {parts[0]}
-            <strong>{highlight}</strong>
+            {/* <strong>{highlight}</strong> */}
             {parts[1]}
           </p>
         </div>
