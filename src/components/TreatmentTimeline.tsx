@@ -1,4 +1,4 @@
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, CheckCircle } from "lucide-react";
 
 type Deadline = {
   id: number;
@@ -6,6 +6,7 @@ type Deadline = {
   date: string;
   amount: number;
   description?: string;
+  isCompleted: boolean;
 };
 
 type TreatmentTimelineProps = {
@@ -61,9 +62,17 @@ export default function TreatmentTimeline({
               <li key={d.id} className="mb-8 ml-2">
                 <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border" style={{ borderColor: '#E6E6FA', background: '#7C6A9C' }} />
                 <div className="flex flex-wrap items-center justify-between gap-3">
-                  <p className="font-semibold text-zinc-900">
-                    {d.title} · {new Date(d.date).toLocaleDateString()}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="font-semibold text-zinc-900">
+                      {d.title} · {new Date(d.date).toLocaleDateString()}
+                    </p>
+                    {d.isCompleted && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700 border border-green-200">
+                        <CheckCircle className="h-4 w-4" color="#22c55e" />
+                        Completed
+                      </span>
+                    )}
+                  </div>
                   <p className="font-semibold" style={{ color: '#7C6A9C' }}>{formatter.format(d.amount)}</p>
                 </div>
                 {d.description && (

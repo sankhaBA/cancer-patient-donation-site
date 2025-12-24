@@ -9,6 +9,7 @@ export default function DiseaseSummary({ title, summary }: DiseaseSummaryProps) 
   // Highlight 'Pembroxin  (Pembrolizumab)' in summary
   const highlight = "Pembroxin  (Pembrolizumab)";
   const parts = summary.split(highlight);
+  console.log(parts);
   return (
     <section className="container mx-auto px-6 py-8">
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
@@ -21,7 +22,7 @@ export default function DiseaseSummary({ title, summary }: DiseaseSummaryProps) 
           <p className="font-medium text-zinc-800">{title}</p>
           <p className="mt-3 text-zinc-700 leading-7">
             {parts[0]}
-            {/* <strong>{highlight}</strong> */}
+            <strong>{highlight}</strong>
             {parts[1]}
           </p>
         </div>
