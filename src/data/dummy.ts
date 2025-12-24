@@ -58,13 +58,13 @@ export type DonationSiteData = {
 
 export const dummyData: DonationSiteData = {
   patient: {
-    name: "Dimanya Mindulee Premalal",
+    name: "Mindulee Premalal",
     age: 20,
   },
   disease: {
     title: "Malignant Melanoma Cancer",
     summary:
-      "Dimanya is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer, currently at stage III. An immunotherapy course of Pembroxin  (Pembrolizumab) is required to improve her chances of remission and long-term survival.Your support can make a life-changing difference in her fight against this disease.",
+      "Mindulee is a kind, resilient young Sri Lankan battling an aggressive form of skin cancer, currently at stage III. An immunotherapy course of Pembroxin  (Pembrolizumab) is required to improve her chances of remission and long-term survival.Your support can make a life-changing difference in her fight against this disease.",
   },
   docsLink:
     "https://drive.google.com/drive/folders/1Qvv_ZOpmq06cf0wz8RRJaILQ0WU-VZp6?usp=sharing",
