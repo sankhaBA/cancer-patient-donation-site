@@ -28,7 +28,7 @@ export default function DocumentsCTA() {
           <h2 className="text-xl font-semibold" style={{ color: '#7C6A9C' }}>Verified Documents</h2>
         </div>
         <p className="mt-3" style={{ color: '#7C6A9C' }}>
-          View medical reports, hospital letters, and cost breakdown verified by the family.
+          View medical reports, hospital letters.
         </p>
         <div className="mt-6 grid grid-cols-2 gap-4">
           {images.map((img, idx) => (
