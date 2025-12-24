@@ -38,8 +38,7 @@ export default function TreatmentTimeline({
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
         <div className="flex items-center gap-3">
           <CalendarDays className="h-6 w-6" style={{ color: '#7C6A9C' }} />
-          {/* <h2 className="text-xl font-semibold text-zinc-900">Treatment Costs Timeline</h2> */}
-          <h2 className="text-xl font-semibold text-zinc-900">Treatment Costs </h2>
+          <h2 className="text-xl font-semibold text-zinc-900">Treatment Costs Timeline</h2>
         </div>
         <div className="mt-4">
           <p className="text-sm text-zinc-500">Treatment</p>
@@ -56,7 +55,7 @@ export default function TreatmentTimeline({
             </div>
           </div>
         </div>
-        {/* <div className="mt-6">
+        <div className="mt-6">
           <ol className="relative border-l border-zinc-200 pl-6">
             {deadlines.map((d) => (
               <li key={d.id} className="mb-8 ml-2">
@@ -73,7 +72,7 @@ export default function TreatmentTimeline({
               </li>
             ))}
           </ol>
-        </div> */}
+        </div>
       </div>
     </section>
   );
