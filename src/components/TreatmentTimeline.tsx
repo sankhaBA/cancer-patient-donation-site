@@ -1,4 +1,5 @@
 import { CalendarDays, CheckCircle } from "lucide-react";
+import { useState } from "react";
 
 type Deadline = {
   id: number;
@@ -26,6 +27,7 @@ export default function TreatmentTimeline({
   deadlines,
   collectedAmount,
 }: TreatmentTimelineProps) {
+  const [invoiceModalOpen, setInvoiceModalOpen] = useState(false);
   const formatter = new Intl.NumberFormat(undefined, {
     style: "currency",
     currency,
@@ -72,6 +74,17 @@ export default function TreatmentTimeline({
                         Completed
                       </span>
                     )}
+                    {/* View Invoice button for Phase 1 only */}
+                    {d.title === 'Phase 1' && (
+                      <button
+                        className="ml-2 inline-flex items-center rounded-lg bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-800 shadow-sm hover:bg-violet-200 transition-colors border border-violet-200"
+                        type="button"
+                        style={{ boxShadow: '0 1px 4px rgba(124,106,156,0.10)' }}
+                        onClick={() => setInvoiceModalOpen(true)}
+                      >
+                        View Invoice
+                      </button>
+                    )}
                   </div>
                   <p className="font-semibold" style={{ color: '#7C6A9C' }}>{formatter.format(d.amount)}</p>
                 </div>
@@ -82,6 +95,15 @@ export default function TreatmentTimeline({
             ))}
           </ol>
         </div>
+        {/* Invoice Proof Modal */}
+        {invoiceModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/20" onClick={() => setInvoiceModalOpen(false)}>
+            <div className="relative bg-white rounded-lg p-4 max-w-2xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
+              <button className="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-800" onClick={() => setInvoiceModalOpen(false)}>&times;</button>
+              <img src="/images/InnvoiceProofPhase1.jpeg" alt="Invoice Proof Phase 1" className="max-h-[70vh] w-auto rounded" />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
