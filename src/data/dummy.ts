@@ -103,7 +103,7 @@ export const dummyData: DonationSiteData = {
     totalAmount: 5280000,
     currency: "LKR",
     deadlines: [
-      { id: 1, title: "Phase 1", date: "2025-12-23", amount: 700000, description: "Medication procurement and session fees", isCompleted: true },
+      { id: 1, title: "Phase 1", date: "2025-12-23", amount: 658000, description: "Medication procurement and session fees", isCompleted: true },
       { id: 2, title: "Phase 2", date: "2026-01-13", amount: 330000, description: "Medication procurement and session fees", isCompleted: false },
       { id: 3, title: "Phase 3", date: "2026-02-03", amount: 330000, description: "Medication procurement and session fees", isCompleted: false },
       { id: 4, title: "Phase 4", date: "2026-02-24", amount: 330000, description: "Medication procurement and session fees", isCompleted: false },
