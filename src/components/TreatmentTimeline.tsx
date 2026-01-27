@@ -35,7 +35,6 @@ export default function TreatmentTimeline({
   });
 
   // collectedAmount is now passed as a prop to avoid hydration mismatch
-
   return (
     <section className="container mx-auto px-6 py-8">
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
@@ -75,7 +74,7 @@ export default function TreatmentTimeline({
                       </span>
                     )}
                     {/* View Invoice button for Phase 1 only */}
-                    {(d.title === 'Phase 1' || d.title === 'Phase 2') && (
+                    {/* {(d.title === 'Phase 1' || d.title === 'Phase 2') && (
                       <button
                         className="ml-2 inline-flex items-center rounded-lg bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-800 shadow-sm hover:bg-violet-200 transition-colors border border-violet-200"
                         type="button"
@@ -84,7 +83,7 @@ export default function TreatmentTimeline({
                       >
                         View Invoice
                       </button>
-                    )}
+                    )} */}
                   </div>
                   <p className="font-semibold" style={{ color: '#7C6A9C' }}>{formatter.format(d.amount)}</p>
                 </div>
